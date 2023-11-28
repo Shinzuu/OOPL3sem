@@ -1,3 +1,5 @@
+package lab1;
+
 public class TestCalculator {
     Calculator calc1, calc2;
     TestCalculator()
