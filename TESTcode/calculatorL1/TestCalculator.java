@@ -1,5 +1,3 @@
-//package lab1;
-
 public class TestCalculator {
     Calculator calc1, calc2;
     TestCalculator()
@@ -20,6 +18,6 @@ public class TestCalculator {
         calc2.div();
     }
     public static void main(String[] args){
-        TestCalculator calc = new TestCalculator();
+        TestCalculator c1 = new TestCalculator();
     }
 }
