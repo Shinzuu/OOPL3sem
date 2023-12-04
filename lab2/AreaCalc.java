@@ -1,35 +1,53 @@
 import java.util.Scanner;
 
 public class AreaCalc {
-    int numberOne;
-    int numberTwo;
-    
-    AreaCalc(){
-        Scanner sc = new Scanner(System.in);
-        numberOne =  sc.nextInt();
+    int radius;
+    int height;
+    int base;
 
-        area = new AreaCalc(numberOne);
+    // Default constructor to get user input for radius
+    AreaCalc() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter the radius: ");
+        radius = sc.nextInt();
+        sc.close();
+
+        calculateArea(radius);
     }
-    AreaCalc(int r){
-        this.rad = r;
-        System.out.println(3.1416*r*r);
+
+    // Constructor for circle
+    AreaCalc(int r) {
+        this.radius = r;
+        calculateArea(radius);
     }
-    AreaCalc(int h, int b){
+
+    // Constructor for triangle
+    AreaCalc(int h, int b) {
         this.height = h;
         this.base = b;
-        System.out.println(0.5*height*base);
+        calculateArea(0.5 * height * base);
     }
-    AreaCalc(int x, int y){
-        this.height = h;
-        this.base = b;
-        System.out.println(0.5*height*base);
+
+    // Constructor for rectangle
+    AreaCalc(int length, int width) {
+        this.height = length;
+        this.base = width;
+        calculateArea(height * base);
     }
-    AreaCalc(int x){
-        this.height = h;
-        this.base = b;
-        System.out.println(0.5*height*base);
+
+    // Method to calculate and print the area
+    private void calculateArea(double area) {
+        System.out.println("The area is: " + area);
     }
+
     public static void main(String[] args) {
-        AreaCalc a1 =new AreaCalc();
+        // Creating an object of AreaCalc using the default constructor
+        AreaCalc a1 = new AreaCalc();
+
+        // Creating objects for specific shapes
+        AreaCalc circle = new AreaCalc(5);
+        AreaCalc triangle = new AreaCalc(4, 8);
+        AreaCalc rectangle = new AreaCalc(6, 10);
     }
 }
+
