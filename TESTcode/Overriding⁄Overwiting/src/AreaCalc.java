@@ -51,7 +51,7 @@ public class AreaCalc {
 		this.radius = radius;
 		System.out.println("the area of circle is "+(3.1416*radius*radius));
 	}
-	//even tho the constructor names are same (current and previous) , we have different parameters ,thus they are being overridden
+	//even tho the constructor names are same (current and previous) , we have different parameters ,thus they are being overloaded
 	AreaCalc (int base, int height){
 		this.base = base;
 		this.height = height;
