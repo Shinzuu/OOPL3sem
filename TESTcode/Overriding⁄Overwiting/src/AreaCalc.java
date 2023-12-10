@@ -63,7 +63,7 @@ public class AreaCalc {
 	AreaCalc (int width, int length){
 		this.width = width;
 		this.length = length;
-		System.out.println("the area of triangle is "+(width*length));
+		System.out.println("the area of ractangle is "+(width*length));
 	}
 	
 	// main fn that sends start instruction 
