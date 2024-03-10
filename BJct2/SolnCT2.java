@@ -38,7 +38,7 @@ public class SolnCT2 {
         }
     }
 
-    public static class Square extends Polygon {
+    public static class Square extends Rectangle {
         @Override
         public void draw() {
             System.out.println("Drawing square");
